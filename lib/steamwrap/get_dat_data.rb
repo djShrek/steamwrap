@@ -1,6 +1,5 @@
 require 'open-uri'
 require 'json'
-require 'awesome_print'
 
 module Steamwrap
   module GetDatData

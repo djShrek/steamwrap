@@ -46,7 +46,12 @@ module Steamwrap
     end
 
     def get_player_bans
-      url = " http://api.steampowered.com/ISteamUser/GetPlayerBans/v1/?key=#{steam_key}&steamids=#{player_id}"
+      url = "http://api.steampowered.com/ISteamUser/GetPlayerBans/v1/?key=#{steam_key}&steamids=#{player_id}"
+      parsed_data(url)
+    end
+
+    def get_user_group_list
+      url = "http://api.steampowered.com/ISteamUser/GetUserGroupList/v1/?key=#{steam_key}&steamids=#{player_id}"
       parsed_data(url)
     end
   end

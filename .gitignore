@@ -12,4 +12,4 @@
 *.o
 *.a
 mkmf.log
-*/lib/test_code.rb
+lib/test_code.rb

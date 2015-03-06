@@ -1,6 +1,7 @@
 module Steamwrap
   class Dota2
     include Steamwrap::GetDatData
+    
     attr_reader :steam_key
     attr_reader :player_id
 
